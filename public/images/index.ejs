@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express App</title>
+    <link rel="stylesheet" href="materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <button id="toggleButton" class="btn">Show/Hide Cards</button>
+                <div id="cardSection" style="display: none;">
+                    <% cardsData.forEach((card, index) => { %>
+                        <div class="card" id="card<%= index %>" style="cursor: pointer;">
+                            <div class="card-image">
+                                <img src="<%= card.image %>" alt="<%= card.title %>">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title"><%= card.title %></span>
+                                <p><%= card.details %></p>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('toggleButton');
+            const cardSection = document.getElementById('cardSection');
+            
+            toggleButton.addEventListener('click', function() {
+                if (cardSection.style.display === 'none') {
+                    cardSection.style.display = 'block';
+                } else {
+                    cardSection.style.display = 'none';
+                }
+            });
+
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    card.classList.toggle('large');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

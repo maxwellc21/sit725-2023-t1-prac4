@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Web App</title>
+  <!-- Import Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper blue">
+      <!-- User Icon -->
+      <ul id="nav-mobile" class="left">
+        <li><a href="#"><img src="images/user-image.png" alt="" class="user-image-size"></a></li>
+      </ul>
+      <!-- Logo -->
+      <a href="#" class="brand-logo right hide-on-med-and-down"><img src="images/logo.png" alt="" class="logo-size"></a>
+    </div>
+  </nav>
+</div>
+  <!-- Image and Button -->
+  <h1 class="center-align">Boostrap<span> Express</span> App</h1>
+  <div class="container-mod">
+        <img src="images/user-image.png" class="custom-size" alt="myimage1">
+        <button class="btn waves-effect waves-light btn-large" id="modal-trigger" type="button" name="action">Open Modal</button>
+    </div>
+<!--modal implementation-->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Add Your Details</h4>
+      <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate" placeholder="placeholder">
+                <label for="last_name">Last Name</label>
+            </div>
+        </div> 
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-close waves-effect waves-green btn-flat" id="formSubmit">Submit Details</a>
+    </div>
+  </div>
+
+  <!-- Card Implementation -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card" id="card1">
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Placeholder Title 1</span>
+            <img class="activator" src="" alt="Image 1">
+            <p>Placeholder details 1</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title 1<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card" id="card2">
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Placeholder Title 2</span>
+            <img class="activator" src="" alt="Image 2">
+            <p>Placeholder details 2</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title 2<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card" id="card2">
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Placeholder Title 2</span>
+            <img class="activator" src="" alt="Image 2">
+            <p>Placeholder details 2</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title 2<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Import Materialize JavaScript and bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/data.js"></script>
+
+</body>
+</html>

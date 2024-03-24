@@ -1,0 +1,36 @@
+.user-image-size{
+    height: 55px;
+}
+.logo-size{
+    height: 55px;
+}
+.container-mod{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    
+}
+.custom-size{
+    height: 400px;
+}
+#modal-trigger{
+    margin-top: 10px;
+}
+span{
+    color: brown;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    width: 300px;
+    height: 600px;
+}
+.card img {
+    width: 100%;
+    height: fit-content;
+    display: block;
+
+}

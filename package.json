@@ -1,0 +1,27 @@
+{
+  "name": "sit725-2024-t1-prac3",
+  "version": "1.0.0",
+  "description": "Bootstrap Express App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxwellc21/sit725-2024-t1-prac3.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Express",
+    "Application"
+  ],
+  "author": "Maxie Cletus Tepaiyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxwellc21/sit725-2024-t1-prac3/issues"
+  },
+  "homepage": "https://github.com/maxwellc21/sit725-2024-t1-prac3#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
